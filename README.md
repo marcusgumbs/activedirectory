@@ -23,7 +23,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Create VMs (Domain controller via Windows Server and Client via Windows 10)
-- Install Active Directory
+- Install Active Directory Domain Services
 - Create Organizational Units
 - Create accounts via script
 - Perform actions within accounts
@@ -36,7 +36,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Created the Domain Controller VM (Windows Server 2022) named “DC-1”
+Set the Domain Controller’s NIC Private IP address to be static
+Create the Client VM (Windows 10) named “Client-1”. Used the same Resource Group and Vnet that was created for DC1.Ensured that both VMs were in the same Vnet. Logged in to DC-1 and installed Active Directory Domain Services
+
 </p>
 <br />
 
@@ -45,7 +48,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Active Directory Users and Computers (ADUC) I created organizational units (employees, clients, and admins). I then ran a script in powershell comprised of self generated accounts.
 </p>
 <br />
 
@@ -54,6 +57,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I learned to create/reset passwords, disable/enable accounts, add users to different groups, etc.
 </p>
 <br />
