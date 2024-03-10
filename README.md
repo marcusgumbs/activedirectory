@@ -38,7 +38,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 Created the Domain Controller VM (Windows Server 2022) named “DC-1”
 Set the Domain Controller’s NIC Private IP address to be static
-Create the Client VM (Windows 10) named “Client-1”. Used the same Resource Group and Vnet that was created for DC1.Ensured that both VMs were in the same Vnet. Logged in to DC-1 and installed Active Directory Domain Services
+Create the Client VM (Windows 10) named “Client-1”. Used the same Resource Group and Vnet that was created for DC1. Ensured that both VMs were in the same Vnet. Logged in to DC-1 and installed Active Directory Domain Services.
 
 </p>
 <br />
@@ -48,7 +48,7 @@ Create the Client VM (Windows 10) named “Client-1”. Used the same Resource G
 
 </p>
 <p>
-In Active Directory Users and Computers (ADUC) I created organizational units (employees, clients, and admins). I then ran a script in powershell comprised of self generated accounts.
+In Active Directory Users and Computers (ADUC) I created organizational units (employees, clients, and admins). I then ran a script in powershell comprised of self generated accounts that will be used for various tasks.
 </p>
 <br />
 
